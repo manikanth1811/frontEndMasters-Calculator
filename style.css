@@ -1,0 +1,134 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+.calculator{
+    background-color: black;
+    width: 400px;
+    display: grid;
+    grid-template-areas:"a a a a"
+                       "b b c d"
+                       "e f g h"
+                       "i j k l"
+                       "m n o p"
+                       "q q q r";
+    gap: 0.5px;
+}
+
+.calculator > button, .calculator > div{
+    height: 100px;
+}
+
+.calculator .results-area{
+    color: white;
+    align-items: right;
+}
+
+.results-area{
+    grid-area: a;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.results-area > h1{
+    align-items: flex-end;
+    justify-content: end;
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+.clear{
+    grid-area: b;
+}
+
+.backspace{
+    grid-area: c;
+}
+
+.div{
+    grid-area: d;
+}
+
+.seven{
+    grid-area: e;
+}
+
+.eight{
+    grid-area: f;
+}
+
+.nine{
+    grid-area: g;
+}
+
+.mul{
+    grid-area: h;
+}
+
+.four{
+    grid-area: i;
+}
+
+.five{
+    grid-area: j;
+}
+
+.six{
+    grid-area: k;
+}
+
+.sub{
+    grid-area: l;
+}
+
+.one{
+    grid-area: m;
+}
+
+.two{
+    grid-area: n;
+}
+
+.three{
+    grid-area: o;
+}
+
+.add{
+    grid-area: p;
+}
+
+.zero{
+    grid-area: q;
+}
+
+.equal{
+    grid-area: r;
+}
+
+.numbers, .clear, .backspace{
+    background-color: #D8D9DB;
+}
+
+.operators{
+    background-color: #df984c;
+    color: white;
+}
+
+.numbers:hover,.clear:hover, .backspace:hover{
+    background-color: #ebebeb;
+}
+
+.operators:hover{
+    background-color: #dfb07e;
+}
+
+button{
+    font-size: 35px;
+}
